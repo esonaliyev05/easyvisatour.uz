@@ -56,7 +56,9 @@ const Main = () => {
       <div className="countes-parent">
            
            <div className="boxses">
+            <div className="box-img">
             <img src="./Countes/services-1.DwE9TaDf.jpg" alt="" />
+            </div>
              <div className="box-title">
               <h2>SHENGEN</h2>
               <img src="./Countes-geb/flag-1.Ba87b5UW.png" alt="" className='img-slice' />
@@ -64,7 +66,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
+              
             <img src="./Countes/services-2.DTm5N94i.jpeg" alt="" />
+              </div>
              <div className="box-title">
               <h2>CANADA</h2>
               <img src="./Countes-geb/flag-2.HyNUznN3.png" alt="" className='img-slice' />
@@ -72,7 +77,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
+              
             <img src="./Countes/services-3._CMGRBWr.jpg" alt="" />
+              </div>
              <div className="box-title">
               <h2>USA</h2>
               <img src="./Countes-geb/flag-3.C8KNAePY.jpg" alt="" className='img-slice' />
@@ -80,7 +88,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
+              
             <img src="./Countes/services-4.lxqOn4Ol.jpg" alt="" />
+              </div>
              <div className="box-title">
               <h2>UK</h2>
               <img src="./Countes-geb/flag-4.3WmQLUuP.jpg" alt="" className='img-slice' />
@@ -88,7 +99,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
+              
             <img src="./Countes/services-5.D6AmCmqA.jpg" alt="" />
+              </div>
              <div className="box-title">
               <h2>AUSTRALIA</h2>
               <img src="./Countes-geb/flag-5.B84Fukqc.jpg" alt="" className='img-slice' />
@@ -96,7 +110,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
+              
             <img src="./Countes/services-6.CPgF6SGa.jpg" alt="" />
+              </div>
              <div className="box-title">
               <h2>NEW ZEALAND</h2>
               <img src="./Countes-geb/flag-6.Dudeuyg-.png" alt="" className='img-slice' />
@@ -104,7 +121,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
+              
             <img src="./Countes/services-7.CYP_oeGi.jpg" alt="" />
+              </div>
              <div className="box-title">
               <h2>JAPAN</h2>
               <img src="./Countes-geb/flag-7.twQFoBkd.jpg" alt="" className='img-slice' />
@@ -112,7 +132,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
             <img src="./Countes/services-8.CbQBurqu.jpg" alt="" />
+              
+              </div>
              <div className="box-title">
               <h2>KOREA</h2>
               <img src="./Countes-geb/flag-8.Db2W1jJP.jpg" alt="" className='img-slice' />
@@ -120,7 +143,10 @@ const Main = () => {
 
            </div>
            <div className="boxses">
+           <div className="box-img">
             <img src="./Countes/services-9.B8AYMP7B.jpg" alt="" />
+              
+              </div>
              <div className="box-title">
               <h2>LATIN AMERICA</h2>
               <img src="./Countes-geb/flag-9.CL_qAoS4.png" alt="" className='img-slice' />

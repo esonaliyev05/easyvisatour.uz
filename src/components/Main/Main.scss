@@ -133,16 +133,29 @@ main{
 
             .boxses{
                 width: 350px;
-                height: 245px;
+                height: 255px;
                 overflow: hidden;
                 box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
                 --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
                 --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-
-                img{
+                border-radius: 20px 20px 0 0;
+                .box-img{
                     width: 100%;
-                    height: 74%;
+                    height: 76%;
+                    overflow: hidden;
                     border-radius: 20px 20px 0 0;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.3s ease;
+
+                        &:hover{
+                            transform: scale(1.2); // Hoverda kattalashish
+                        }
+                    }
+               
 
 
                 }
@@ -164,6 +177,9 @@ main{
                         width: 80px;
                         height: 45px;
                         border-radius: 10px;
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+                        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+                        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
                     }
                 }
                 
