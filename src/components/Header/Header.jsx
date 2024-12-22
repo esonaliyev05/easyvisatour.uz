@@ -15,7 +15,7 @@ export default function App() {
   return (
     <>
       <Swiper 
-      autoplay={{ delay: 1000, disableOnInteraction: false }}  
+      autoplay={{ delay: 3000, disableOnInteraction: false }}  
       pagination={{ clickable: true }} 
       loop={true}
        modules={[Pagination , Navigation , Autoplay] }

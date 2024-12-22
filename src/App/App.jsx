@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Header from '../components/Header/Header';
 import Main from '../components/Main/Main';
 
+
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Yuklanish holatini boshqarish
 
@@ -11,7 +12,7 @@ function App() {
     // 3 soniyada yuklanishni tugatish (misol uchun)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer); // Tozalash
   }, []);

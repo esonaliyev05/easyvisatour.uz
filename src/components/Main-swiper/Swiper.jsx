@@ -1,39 +1,57 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import './Swiper.scss';
-import { Navigation , Autoplay } from 'swiper/modules';
-// import required modules
-// import { Pagination } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
+import { SlArrowRight } from "react-icons/sl";
+import { SlArrowLeft } from "react-icons/sl";
 
 export default function App() {
   return (
     <>
       <Swiper
-          spaceBetween={50} // Slaydlar orasidagi bo'shliq
-          slidesPerView={3} // Bir vaqtning o'zida ko'rsatiladigan slaydlar soni
-          navigation={true} modules={[Navigation]} // Navigatsiya tugmalari
-        //   pagination={{ clickable: true }} // Pagination
-          autoplay={{ delay: 2500 }} // Avtomatik o'zgartirish
+        spaceBetween={50}
+        slidesPerView={3} // Bir vaqtning o'zida 3 slayd ko'rsatiladi
+        navigation={{
+          prevEl: '.prevleft', // Previous tugmasi
+          nextEl: '.prevrigt', // Next tugmasi
+        }}
+        modules={[Navigation, Autoplay]} // Navigation modulini o'z ichiga oladi
+        autoplay={{ delay: 2500 }} // Avtomatik slayd o'zgartirish
+        breakpoints={{
+          320: {
+            slidesPerView: 1, // 320px dan kichik ekranlarda 1 slayd
+          },
+          768: {
+            slidesPerView: 2, // 768px dan kichik ekranlarda 2 slayd
+          },
+          1024: {
+            slidesPerView: 3, // 1024px dan katta ekranlarda 3 slayd
+          },
+        }}
         className="MainSwiper"
       >
-        {/* <h1>Popular</h1> */}
-
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-1.mU9i1uuG.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-2.DFAi4vfx.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-3.sg5jDk_Z.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-4.BsgCNCIo.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-5.uIja0UcC.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-6.IOtI1QLR.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide className='main-swiper'><img src="./Main-swiper/popular-7.D5qWhdzg.jpg" alt="" /></SwiperSlide>
-
-     
-    
+        <button className="prevleft"><SlArrowLeft/> </button>
+        <SwiperSlide className="main-swiper">
+          <img src="./Main-swiper/popular-1.mU9i1uuG.jpg" alt="Popular 1" />
+        </SwiperSlide>
+        <SwiperSlide className="main-swiper">
+          <img src="./Main-swiper/popular-2.DFAi4vfx.jpg" alt="Popular 2" />
+        </SwiperSlide>
+        <SwiperSlide className="main-swiper">
+          <img src="./Main-swiper/popular-3.sg5jDk_Z.jpg" alt="Popular 3" />
+        </SwiperSlide>
+        <SwiperSlide className="main-swiper">
+          <img src="./Main-swiper/popular-4.BsgCNCIo.jpg" alt="Popular 4" />
+        </SwiperSlide>
+        <SwiperSlide className="main-swiper">
+          <img src="./Main-swiper/popular-5.uIja0UcC.jpg" alt="Popular 5" />
+        </SwiperSlide>
+        <SwiperSlide className="main-swiper">
+          <img src="./Main-swiper/popular-6.IOtI1QLR.jpg" alt="Popular 6" />
+        </SwiperSlide>
+        <button className="prevrigt"><SlArrowRight/></button>
       </Swiper>
     </>
   );
