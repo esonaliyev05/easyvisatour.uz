@@ -4,6 +4,7 @@ import Swiper from '../Main-swiper/Swiper'
 import "aos/dist/aos.css";
 import Aos from 'aos';
 import { useEffect } from 'react';
+import Plags from "../../components/MainPlags/Plags"
 
 
 const Main = () => {
@@ -99,14 +100,14 @@ const Main = () => {
 
     <div className="Main-countes">
     <div className="main-text">
-        <h1  >Countries</h1>
+        <h1 data-aos="fade-right" >Countries</h1>
         <hr />
         {/* <span></span> */}
       </div>
 
-      <div className="countes-parent">
+      <div className="countes-parent" >
            
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
             <div className="box-img">
             <img src="./Countes/services-1.DwE9TaDf.jpg" alt="" />
             </div>
@@ -116,7 +117,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
               
             <img src="./Countes/services-2.DTm5N94i.jpeg" alt="" />
@@ -127,7 +128,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
               
             <img src="./Countes/services-3._CMGRBWr.jpg" alt="" />
@@ -138,7 +139,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
               
             <img src="./Countes/services-4.lxqOn4Ol.jpg" alt="" />
@@ -149,7 +150,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
               
             <img src="./Countes/services-5.D6AmCmqA.jpg" alt="" />
@@ -160,7 +161,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
               
             <img src="./Countes/services-6.CPgF6SGa.jpg" alt="" />
@@ -171,7 +172,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
               
             <img src="./Countes/services-7.CYP_oeGi.jpg" alt="" />
@@ -182,7 +183,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
             <img src="./Countes/services-8.CbQBurqu.jpg" alt="" />
               
@@ -193,7 +194,7 @@ const Main = () => {
              </div>
 
            </div>
-           <div className="boxses">
+           <div className="boxses" data-aos="zoom-in">
            <div className="box-img">
             <img src="./Countes/services-9.B8AYMP7B.jpg" alt="" />
               
@@ -214,7 +215,7 @@ const Main = () => {
      <div className="Main-excursion">
          
      <div className="main-text">
-        <h1>Excursion</h1>
+        <h1 data-aos="fade-right">Excursion</h1>
         <hr />
         {/* <span></span> */}
       </div>
@@ -244,7 +245,7 @@ const Main = () => {
      <div className="Main-client">
 
      <div className="main-text">
-        <h1>Client Reviews</h1>
+        <h1 data-aos="fade-right">Client Reviews</h1>
         <hr />
         {/* <span></span> */}
       </div>
@@ -281,30 +282,30 @@ const Main = () => {
           <div className="text">
 
             <div className="pr-h1">
-              <h1>Priorities in Tourism and Visas</h1>
+              <h1 data-aos="fade-up">Priorities in Tourism and Visas</h1>
               <hr />
             </div>
 
-            <p>We provide a high level of service and reliability in obtaining tourist visas. Our team has experience in the tourism industry and is ready to quickly resolve issues related to obtaining visas. We strive to make our clients' travels comfortable and carefree, providing support at every stage—from choosing a visa to obtaining documentation.</p>
+            <p data-aos="zoom-in">We provide a high level of service and reliability in obtaining tourist visas. Our team has experience in the tourism industry and is ready to quickly resolve issues related to obtaining visas. We strive to make our clients' travels comfortable and carefree, providing support at every stage—from choosing a visa to obtaining documentation.</p>
 
           </div>
           
            <div className="boxses">
-            <div className="box-tab">
+            <div className="box-tab" data-aos="zoom-in" >
             <img src="./public/Imeg/image.png" alt="" />
 
             <h3>Saving Your Time</h3>
 
             </div>
-            <div className="box-tab">
+            <div className="box-tab" data-aos="zoom-in">
             <img src="./public/Imeg/prioritet-3.Dbi66kDf.svg fill.png" alt="" />
              <h3>Reliability</h3>
             </div>
-            <div className="box-tab">
+            <div className="box-tab" data-aos="zoom-in">
             <img src="./public/Imeg/SVG.png" alt="" />
               <h3>Support</h3>
             </div>
-            <div className="box-tab">
+            <div className="box-tab" data-aos="zoom-in">
             <img src="./public/Imeg/monney.png" alt="" />
              <h3>Convenience</h3>
             </div>
@@ -318,22 +319,22 @@ const Main = () => {
           <div className="Loders">
 
             <div className="loders-text">
-              <h1>We in Numbers</h1>
+              <h1 data-aos="fade-up">We in Numbers</h1>
               <hr />
             </div>
 
             <div className="loders-box">
-              <div className="box">
+              <div className="box"  data-aos="zoom-in">
                  <h1>7320</h1>
 
                  <p>Issued Visas</p>
 
               </div>
-              <div className="box">
+              <div className="box"  data-aos="zoom-in">
                 <h1>7257</h1>
                 <p>Successful Trips</p>
               </div>
-              <div className="box">
+              <div className="box"  data-aos="zoom-in">
                 <h1>7250</h1>
                 <p>Satisfied Clients</p>
               </div>
@@ -388,7 +389,7 @@ const Main = () => {
       </div>
     </div>
 
-
+      <Plags/>
     </main>
     </>
   )
