@@ -7,20 +7,29 @@ import Footer from '../components/Footer/Footer';
 
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true); // Yuklanish holatini boshqarish
+  
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
 
   useEffect(() => {
-    // 3 soniyada yuklanishni tugatish (misol uchun)
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
+    const handlePageLoad = () => {
+      setIsPageLoaded(true); // Sahifa yuklanganda holatni yangilash
+    };
 
-    return () => clearTimeout(timer); // Tozalash
+    // Sahifa to'liq yuklanishini kuzatish
+    if (document.readyState === "complete") {
+      handlePageLoad(); // Agar sahifa allaqachon yuklangan bo'lsa
+    } else {
+      window.addEventListener("load", handlePageLoad); // Yuklanishni kutish
+    }
+
+    // Tozalash funksiyasi
+    return () => {
+      window.removeEventListener("load", handlePageLoad);
+    };
   }, []);
-
   return (
     <>
-      {isLoading ? (
+      {!isPageLoaded ? (
         <div className="preloader">
           <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="Yuklanmoqda..." />
         </div>
