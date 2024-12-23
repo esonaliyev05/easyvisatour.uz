@@ -47,11 +47,23 @@ const Navbar = () => {
       
       <div className={open ? "Open activ" : "Open"}>
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Countries</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Our Works</a></li>
-          <li><a href="">Contact</a></li>
+          <li>  <a href="#about">About</a></li> 
+          <li>
+            <a href="#Countries">Countries</a>
+
+          </li>
+          <li>
+
+            <a href="#services">Services</a>
+          </li>
+          <li>
+
+            <a href="#excursion">Our Works</a>
+          </li>
+          <li>
+
+            <a href="#concat">Contact</a>
+          </li>
         </ul>
           
         <select>
