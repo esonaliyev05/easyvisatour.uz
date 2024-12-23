@@ -12,7 +12,7 @@ export default function App() {
     <>
       <Swiper
         spaceBetween={50}
-        slidesPerView={3} // Bir vaqtning o'zida 3 slayd ko'rsatiladi
+        slidesPerView={1} // Bir vaqtning o'zida 3 slayd ko'rsatiladi
         navigation={{
           prevEl: '.prevleft', // Previous tugmasi
           nextEl: '.prevrigt', // Next tugmasi
@@ -24,7 +24,7 @@ export default function App() {
             slidesPerView: 1, // 320px dan kichik ekranlarda 1 slayd
           },
           768: {
-            slidesPerView: 2, // 768px dan kichik ekranlarda 2 slayd
+            slidesPerView: 1, // 768px dan kichik ekranlarda 2 slayd
           },
           1024: {
             slidesPerView: 3, // 1024px dan katta ekranlarda 3 slayd
