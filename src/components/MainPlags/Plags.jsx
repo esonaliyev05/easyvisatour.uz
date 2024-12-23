@@ -9,12 +9,12 @@ export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   const mainSwiperRef = useRef(null);
   const thumbnails = [
-    "public/Plags-swiper/work-slide1.BeuZ4KJm.jpg",
-    "public/Plags-swiper/work-slide2.BJDQW2uM.jpg",
-    "public/Plags-swiper/work-slide3.BSf3vuZz.jpg",
-    "public/Plags-swiper/work-slide4.BBrd_6dI.jpg",
-    "public/Plags-swiper/work-slide5.k_KIf_jV.jpg",
-    "public/Plags-swiper/work-slide6.CPdJobVy.jpg",
+    "/Plags-swiper/work-slide1.BeuZ4KJm.jpg",
+    "./Plags-swiper/work-slide2.BJDQW2uM.jpg",
+    "./Plags-swiper/work-slide3.BSf3vuZz.jpg",
+    "./Plags-swiper/work-slide4.BBrd_6dI.jpg",
+    "./Plags-swiper/work-slide5.k_KIf_jV.jpg",
+    "./Plags-swiper/work-slide6.CPdJobVy.jpg",
   ];
 
   const handleThumbnailClick = (index) => {
