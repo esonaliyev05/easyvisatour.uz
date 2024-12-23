@@ -4,10 +4,46 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { RiTelegramLine } from "react-icons/ri";
 import { FiPlusCircle } from "react-icons/fi";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import axios from 'axios';
+import { data } from 'react-router-dom';
 
 const Footer = () => {
+  const SendMassage = (event) => {
+    event.preventDefault();
+  
+    const name = document.getElementById("name").value.trim();
+    const surname = document.getElementById("surname").value.trim();
+    const telephone = document.getElementById("telephone").value.trim();
+    const coment = document.getElementById("coment").value.trim();
+  
+    if (!name || !surname || !telephone || !coment) {
+      alert("Barcha maydonlarni to'ldiring!");
+      return;
+    }
+  
+    const token = "7345560299:AAFAwMyRQ9uHLpIdmo6T5nwPLUwV_KQJrcE";
+    const chat_id =  6992354984;
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+  
+    const massangeContent = `Ismi: ${name}\nFamilyasi: ${surname}\nNomeri: ${telephone}\nKommentariya: ${coment}`;
+  
+    axios.post(url, {
+      chat_id: chat_id,
+      text: massangeContent,
+    })
+      .then(() => {
+        alert("Muvoffaqiyatli yuborildi!");
+        document.getElementById("myForm").reset();
+      })
+      .catch((error) => {
+        console.error("Yuborishda hatolik:", error.response ? error.response.data : error);
+        alert("Yuborishda xatolik yuz berdi.");
+      });
+  };
+  
+
   return (
-    <footer>
+    <footer id='concat'>
 
 
      <div className="footer-container">
@@ -67,16 +103,16 @@ const Footer = () => {
 
               <div className="footer-form">
                
-               <form>
+               <form id='myForm' onSubmit={SendMassage}>
                   
                   <h1>Submit a request</h1>
 
-                  <input type="text" placeholder='Name' />
+                  <input type="text" placeholder='Name' id='name' />
 
-                  <input type="text" placeholder='Surname' />
-                  <input type="number" placeholder='telephone' />
+                  <input type="text" placeholder='Surname' id='surname' />
+                  <input type="number" placeholder='telephone' id='telephone' />
 
-                  <textarea placeholder='Comments'></textarea>
+                  <textarea placeholder='Comments' id='coment'></textarea>
 
                   <button type='submit'>Submit a request</button>
 

@@ -98,7 +98,7 @@ const Main = () => {
 
      </div>
 
-    <div className="Main-countes">
+    <div className="Main-countes" id='Countries'>
     <div className="main-text">
         <h1 data-aos="fade-right" >Countries</h1>
         <hr />
@@ -212,7 +212,7 @@ const Main = () => {
 
     </div>     
 
-     <div className="Main-excursion">
+     <div className="Main-excursion" id='excursion'>
          
      <div className="main-text">
         <h1 data-aos="fade-right">Excursion</h1>
@@ -354,7 +354,7 @@ const Main = () => {
 
     </div>
 
-    <div className="services">
+    <div className="services" id='services'>
       
       <div className="services-text">
         <h1>Services</h1>

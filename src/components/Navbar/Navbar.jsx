@@ -20,12 +20,15 @@ const Navbar = () => {
 
         <div className="nav-concet">
           <ul>
-            <a href="">About</a>
-            <a href="">Countries</a>
-            <a href="">Services</a>
-            <a href="">Our Works</a>
-            <a href="">Contact</a>
+            <a href="#about">About</a>
+            <a href="#Countries">Countries</a>
+            <a href="#services">Services</a>
+            <a href="#excursion">Our Works</a>
+            <a href="#concat">Contact</a>
+            
           </ul>
+            
+
 
           <select>
             <option value="">UZ</option>
