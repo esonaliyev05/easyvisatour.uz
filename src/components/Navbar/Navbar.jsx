@@ -46,6 +46,11 @@ const Navbar = () => {
       </div>
       
       <div className={open ? "Open activ" : "Open"}>
+          
+          <div className="edit" onClick={() => setOpen(false)}>
+            X
+          </div>
+
         <ul>
           <li>  <a href="#about">About</a></li> 
           <li>
