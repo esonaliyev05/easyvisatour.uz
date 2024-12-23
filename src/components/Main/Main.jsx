@@ -225,17 +225,17 @@ const Main = () => {
         <div className="ext-vido"> 
          
          <video src="https://www.easyvisatour.uz/_nuxt/Tur-1.CSw71yk-.mp4" controls></video>
-         <img src="./public/Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+         <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
 
          </div>
         <div className="ext-vido">
           <video src="https://www.easyvisatour.uz/_nuxt/Tur-2._fNf8ipk.mp4" controls></video>
-          <img src="./public/Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+          <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
         </div>
         <div className="ext-vido">
               
               <video src="https://www.easyvisatour.uz/_nuxt/Tur-3.CVnwjvBy.mp4" controls></video>
-              <img src="./public/Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+              <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
         </div>
 
        </div>
@@ -254,15 +254,15 @@ const Main = () => {
 
                  <div className="clinet-video">
                   <video src="https://www.easyvisatour.uz/_nuxt/Client-1.BV6NKnVm.mp4" controls></video>
-                  <img src="./public/Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+                  <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
                  </div>
                  <div className="clinet-video">
                   <video src="https://www.easyvisatour.uz/_nuxt/Client-2.BL9vfObs.mp4" controls></video>
-                  <img src="./public/Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+                  <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
                  </div>
                  <div className="clinet-video">
                   <video src="https://www.easyvisatour.uz/_nuxt/Client-3.CpjT8gFj.mp4" controls></video>
-                  <img src="./public/Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+                  <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
                  </div>
              
 
@@ -292,21 +292,21 @@ const Main = () => {
           
            <div className="boxses">
             <div className="box-tab" data-aos="zoom-in" >
-            <img src="./public/Imeg/image.png" alt="" />
+            <img src="./Imeg/image.png" alt="" />
 
             <h3>Saving Your Time</h3>
 
             </div>
             <div className="box-tab" data-aos="zoom-in">
-            <img src="./public/Imeg/prioritet-3.Dbi66kDf.svg fill.png" alt="" />
+            <img src="./Imeg/prioritet-3.Dbi66kDf.svg fill.png" alt="" />
              <h3>Reliability</h3>
             </div>
             <div className="box-tab" data-aos="zoom-in">
-            <img src="./public/Imeg/SVG.png" alt="" />
+            <img src="./Imeg/SVG.png" alt="" />
               <h3>Support</h3>
             </div>
             <div className="box-tab" data-aos="zoom-in">
-            <img src="./public/Imeg/monney.png" alt="" />
+            <img src="./Imeg/monney.png" alt="" />
              <h3>Convenience</h3>
             </div>
            </div>
