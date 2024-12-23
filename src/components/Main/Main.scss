@@ -694,6 +694,7 @@ main{
 
         .main-text{
             // padding: 35px 0;
+            text-align: center;
 
             h1{
                 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -710,6 +711,7 @@ main{
                 height: 5px;
                 background: red;
                 border: none;
+                margin: 0 auto;
 
             }
         }

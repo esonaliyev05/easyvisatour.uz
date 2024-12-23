@@ -66,3 +66,28 @@
 .prevrigt {
   right: 10px;
 }
+
+@media screen and (max-width: 447px){
+  .MainSwiper{
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    // align-items: center;
+    
+    .main-swiper{
+      width: 250px;
+      height: 220px;
+
+      img{
+        width: 250px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+    }
+
+
+  }
+}

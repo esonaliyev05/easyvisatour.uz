@@ -20,7 +20,7 @@ export default function App() {
         modules={[Navigation, Autoplay]} // Navigation modulini o'z ichiga oladi
         autoplay={{ delay: 2500 }} // Avtomatik slayd o'zgartirish
         breakpoints={{
-          320: {
+          447: {
             slidesPerView: 1, // 320px dan kichik ekranlarda 1 slayd
           },
           768: {
