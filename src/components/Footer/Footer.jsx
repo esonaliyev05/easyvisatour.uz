@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Footer.scss"
 import { IoLogoInstagram } from "react-icons/io5";
 import { RiTelegramLine } from "react-icons/ri";
@@ -41,6 +41,23 @@ const Footer = () => {
       });
   };
   
+  // const [phone, setPhone] = useState('');
+
+  // const handlePhoneChange = (event) => {
+  //   let value = event.target.value.replace(/\D/g, ''); // Faqat raqamlarni qoldirish
+  //   if (value.length > 9) {
+  //     value = value.slice(0, 9); // 9 raqamdan ko'p bo'lsa, kesish
+  //   }
+
+  //   // Formatlash: +998 (__) __ __ __
+  //   let formattedValue = '+998 ';
+  //   if (value.length > 0) formattedValue += `(${value.slice(0, 2)}) `;
+  //   if (value.length > 2) formattedValue += `${value.slice(2, 4)} `;
+  //   if (value.length > 4) formattedValue += `${value.slice(4, 6)} `;
+  //   if (value.length > 6) formattedValue += `${value.slice(6, 9)}`;
+
+  //   setPhone(formattedValue);  // Formatted value saqlanadi
+  // };
 
   return (
     <footer id='concat'>
@@ -110,7 +127,14 @@ const Footer = () => {
                   <input type="text" placeholder='Name' id='name' />
 
                   <input type="text" placeholder='Surname' id='surname' />
-                  <input type="number" placeholder='telephone' id='telephone' />
+                  <input
+        type="text"  // "number" emas, "text" ishlatiladi
+        id="telephone"
+        // value={phone}
+        // onChange={handlePhoneChange}
+        maxLength="18"
+        placeholder="+998 (__) __ __ __"
+      />
 
                   <textarea placeholder='Comments' id='coment'></textarea>
 

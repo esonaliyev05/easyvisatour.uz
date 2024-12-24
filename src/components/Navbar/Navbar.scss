@@ -95,7 +95,7 @@ nav{
 
     .Open{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         transition: all .2s linear;
         position: fixed;
         // display: none;
@@ -127,18 +127,19 @@ nav{
         ul{
             width: 100%;
             height: auto;
+            display: flex;
+            flex-direction: column;
             // margin-top: 40%;
-            line-height: 50px;
+            // line-height: 50px;
             // text-align: center;
+            gap: 20px;
 
-            li{
-                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            a{
+                color: black;
+                font-weight: 700;
                 font-size: 25px;
-
-                a{
-                    color: black;
-                    font-weight: 600;
-                }
+                font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             }
         }
 
