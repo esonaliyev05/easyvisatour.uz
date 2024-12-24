@@ -5,14 +5,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import './Header.scss';
 
 // import required modules
 import { Pagination , Autoplay, Navigation} from 'swiper/modules';
 
 export default function App() {
+  // const HandelChange = (event) => {
+  //   const selectedLaungage = event.target.value;
+  //   i18n.changeLanguage(selectedLaungage);
+    
+
+  // }
+  const {t, i18n} = useTranslation();
+  const HandelChange = (event) => {
+    const selectedLanugage = event.target.value;
+
+    i18n.changeLanguage(selectedLanugage);
+  }
   return (
+    
     <>
       <Swiper 
       autoplay={{ delay: 3000, disableOnInteraction: false }}  
@@ -24,17 +38,17 @@ export default function App() {
 
       <SwiperSlide className='header-slider-chiled'><img src="./Header-img/bg-1.N3jECmMN.png" alt="" />  <div className="container"> 
             <div className="text">
-                <h3>The best tourist routes at affordable prices.</h3>
+                <h3>{t("Eng yaxshi sayohat yo'nalishlari arzon narxlarda.")}</h3>
             </div>
       </div> </SwiperSlide>
       <SwiperSlide className='header-slider-chiled'><img src="./Header-img/bg-2.B_ZQ9TY_.png" alt="" /> <div className="container">
            <div className="text">
-            <h3>Reliable visa processing for all countries.</h3>
+            <h3>{t("Barcha mamlakatlarga ishonchli viza ishlov berish.")}</h3>
            </div>
         </div> </SwiperSlide>
       <SwiperSlide className='header-slider-chiled'><img src="./Header-img/bg-3.R75aPUI8.webp" alt="" /> <div className="container">
            <div className="text">
-            <h3>Your comfort in travel is our concern.</h3>
+            <h3>{t("Sayohatdagi qulayligingiz bizning tashvishimiz.")}</h3>
            </div>
         </div> </SwiperSlide>
 
