@@ -29,7 +29,7 @@ export default function App() {
           990: {
             slidesPerView: 2,
           },
-          1024: {
+          1300: {
            slidesPerView: 3
           }
 
