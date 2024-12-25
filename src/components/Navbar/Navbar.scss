@@ -63,6 +63,15 @@ nav{
                     font-size: 16px;
                     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
                     // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 16px;
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent; /* Boshlang‘ich chiziq ko‘rinmaydi */
+  transition: all 0.3s ease;
+                    &:hover{
+                        color: red; /* Matn rangi qizilga o‘zgaradi */
+                        border-bottom: 2px solid red;
+                    }
                 }
             }
 

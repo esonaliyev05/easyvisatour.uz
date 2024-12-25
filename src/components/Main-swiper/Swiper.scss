@@ -91,3 +91,54 @@
 
   }
 }
+@media screen and (min-width: 447px) and (max-width: 769px){
+  .MainSwiper{
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    
+    .main-swiper{
+      width: 260px;
+      height: 220px;
+
+      img{
+        width: 250px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+    }
+
+
+  }
+} 
+// @media screen and (min-width: 769px) and (max-width: 990px) {
+//   .MainSwiper{
+//     width: 100%;
+//     height: 350px;
+//     margin: 0 auto;
+//     overflow: hidden;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 25px;
+    
+//     .main-swiper{
+//       width: 260px;
+//       height: 220px;
+
+//       img{
+//         width: 250px;
+//         border-radius: 20px;
+//         object-fit: cover;
+//       }
+
+//     }
+
+
+//   } 
+// }
+  

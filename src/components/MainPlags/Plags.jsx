@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Plags.scss";
 import { Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -24,13 +25,19 @@ export default function App() {
     }
   };
 
+  const {t, i18n} = useTranslation();
+  const HandelChange = (event) => {
+    const selectedLanugage = event.target.value;
+
+    i18n.changeLanguage(selectedLanugage);
+  }
   return (
     <>
 
     <div className="Plags-container">
          
          <div className="Plags-text" data-aos="fade-right">
-          <h1 >Travels</h1>
+          <h1 > {t("Sayohatlar")} </h1>
           <hr />
          </div>
       

@@ -20,15 +20,20 @@ export default function App() {
         modules={[Navigation, Autoplay]} // Navigation modulini o'z ichiga oladi
         autoplay={{ delay: 2500 }} // Avtomatik slayd o'zgartirish
         breakpoints={{
-          448: {
+          648: {
             slidesPerView: 1, // 320px dan kichik ekranlarda 1 slayd
           },
-          768: {
-            slidesPerView: 1, // 768px dan kichik ekranlarda 2 slayd
+          668: {
+            slidesPerView: 2, // 768px dan kichik ekranlarda 2 slayd
+          },
+          990: {
+            slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 3, // 1024px dan katta ekranlarda 3 slayd
-          },
+           slidesPerView: 3
+          }
+
+         
         }}
         className="MainSwiper"
       >

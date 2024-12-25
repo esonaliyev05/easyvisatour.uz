@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import Aos from 'aos';
 import { useEffect } from 'react';
 import Plags from "../../components/MainPlags/Plags"
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 
 const Main = () => {
@@ -55,6 +57,12 @@ const Main = () => {
 
     setContent(text);
   }
+  const {t, i18n} = useTranslation();
+  const HandelChange = (event) => {
+    const selectedLanugage = event.target.value;
+
+    i18n.changeLanguage(selectedLanugage);
+  }
   
   return (
     <>
@@ -63,7 +71,7 @@ const Main = () => {
     <div className="Main-container">
 
       <div className="main-text">
-        <h1 >Populars</h1>
+        <h1 >{t("Populars")}</h1>
         <hr />
         {/* <span></span> */}
       </div>
@@ -76,15 +84,15 @@ const Main = () => {
          <div className="about-text">
            
            <div className="text-about">
-            <h1 data-aos="fade-right">About </h1>
+            <h1 data-aos="fade-right"> {t("Haqida")} </h1>
             <hr />
            </div>
 
-           <p>EASY VISA CONSULTING is a rapidly growing company specializing in visa support for travelers. We ensure that your trips are comfortable and worry-free.</p>
+           <p> {t("EASY VISA CONSULTING — bu sayohatchilar uchun viza yordami ko'rsatishga ixtisoslashgan tez rivojlanayotgan kompaniya. Biz sizning sayohatlaringizni qulay va xavfsiz qilishni ta'minlaymiz.")} </p>
 
-            <p> EASY VISA CONSULTING provides visa services for leisure and business trips to the Schengen Area, Canada, the USA, the UK, Japan, and Korea. Our team of experienced professionals ensures a high level of service, allowing you to focus on your travel plans.</p>
+            <p> {t("EASY VISA CONSULTING sayohat va biznes safarlari uchun Schengen hududi, Kanada, AQSH, Buyuk Britaniya, Yaponiya va Koreyaga viza xizmatlarini taqdim etadi. Bizning tajribali mutaxassislar jamoamiz yuqori darajadagi xizmatni ta'minlab, sizning sayohat rejalaringizga e'tibor qaratishga imkon beradi.")} </p>
 
-             <p> We are committed to making the visa application process simple and understandable for clients from Uzbekistan, enabling them to easily and quickly access the best travel destinations in the world.</p>
+             <p> {t("Biz viza ariza jarayonini O'zbekistondan kelgan mijozlarimiz uchun oddiy va tushunarli qilishga sodiqmiz, ularga dunyoning eng yaxshi sayohat manzillariga oson va tez kirish imkonini yaratamiz.")} </p>
  
 
          </div>
@@ -100,7 +108,7 @@ const Main = () => {
 
     <div className="Main-countes" id='Countries'>
     <div className="main-text">
-        <h1 data-aos="fade-right" >Countries</h1>
+        <h1 data-aos="fade-right" > {t("Mamlakatlar")} </h1>
         <hr />
         {/* <span></span> */}
       </div>
@@ -215,7 +223,7 @@ const Main = () => {
      <div className="Main-excursion" id='excursion'>
          
      <div className="main-text">
-        <h1 data-aos="fade-right">Excursion</h1>
+        <h1 data-aos="fade-right"> {t("Ekskursiya")} </h1>
         <hr />
         {/* <span></span> */}
       </div>
@@ -245,7 +253,7 @@ const Main = () => {
      <div className="Main-client">
 
      <div className="main-text">
-        <h1 data-aos="fade-right">Client Reviews</h1>
+        <h1 data-aos="fade-right"> {t( "Mijozlar Sharhlari")} </h1>
         <hr />
         {/* <span></span> */}
       </div>
@@ -282,11 +290,11 @@ const Main = () => {
           <div className="text">
 
             <div className="pr-h1">
-              <h1 data-aos="fade-up">Priorities in Tourism and Visas</h1>
+              <h1 data-aos="fade-up"> {t("Sayohat va Vizalar bo'yicha Prioritetlar")} </h1>
               <hr />
             </div>
 
-            <p data-aos="zoom-in">We provide a high level of service and reliability in obtaining tourist visas. Our team has experience in the tourism industry and is ready to quickly resolve issues related to obtaining visas. We strive to make our clients' travels comfortable and carefree, providing support at every stage—from choosing a visa to obtaining documentation.</p>
+            <p data-aos="zoom-in">{t("Biz sayohat vizalarini olishda yuqori darajadagi xizmat va ishonchlilikni ta'minlaymiz. Bizning jamoamiz turizm sohasida tajribaga ega bo'lib, vizalar olish bilan bog'liq masalalarni tezda hal qilishga tayyor. Biz mijozlarimizning sayohatlarini qulay va xavfsiz qilishga intilamiz, har bir bosqichda yordam ko'rsatamiz—vizani tanlashdan to hujjatlarni olishgacha.")}</p>
 
           </div>
           
@@ -294,20 +302,20 @@ const Main = () => {
             <div className="box-tab" data-aos="zoom-in" >
             <img src="./Imeg/image.png" alt="" />
 
-            <h3>Saving Your Time</h3>
+            <h3>{t("Vaqtingizni Saqlash")}</h3>
 
             </div>
             <div className="box-tab" data-aos="zoom-in">
             <img src="./Imeg/prioritet-3.Dbi66kDf.svg fill.png" alt="" />
-             <h3>Reliability</h3>
+             <h3>{t("Ishonchlilik")}</h3>
             </div>
             <div className="box-tab" data-aos="zoom-in">
             <img src="./Imeg/SVG.png" alt="" />
-              <h3>Support</h3>
+              <h3>{t("Yordam")}</h3>
             </div>
             <div className="box-tab" data-aos="zoom-in">
             <img src="./Imeg/monney.png" alt="" />
-             <h3>Convenience</h3>
+             <h3>{t("Qulaylik")}</h3>
             </div>
            </div>
 
@@ -319,7 +327,7 @@ const Main = () => {
           <div className="Loders">
 
             <div className="loders-text">
-              <h1 data-aos="fade-up">We in Numbers</h1>
+              <h1 data-aos="fade-up"> {t("Biz raqamlarda")} </h1>
               <hr />
             </div>
 
@@ -327,16 +335,16 @@ const Main = () => {
               <div className="box"  data-aos="zoom-in">
                  <h1>7320</h1>
 
-                 <p>Issued Visas</p>
+                 <p> {t("Berilgan vizalar")} </p>
 
               </div>
               <div className="box"  data-aos="zoom-in">
                 <h1>7257</h1>
-                <p>Successful Trips</p>
+                <p>{t("Muvaffaqiyatli sayohatlar")}</p>
               </div>
               <div className="box"  data-aos="zoom-in">
                 <h1>7250</h1>
-                <p>Satisfied Clients</p>
+                <p> {t("Qoniqgan mijozlar")} </p>
               </div>
             </div>
 
@@ -357,7 +365,7 @@ const Main = () => {
     <div className="services" id='services'>
       
       <div className="services-text">
-        <h1>Services</h1>
+        <h1>{t("Xizmatlar")}</h1>
         <hr />
       </div>
         
@@ -365,22 +373,22 @@ const Main = () => {
 
       <div className="buttons">
         <button onClick={() => handleButtonClick("Visa Consultations")}>
-          Visa Consultations
+         {t("Viza maslahatlari")}
         </button>
         <button onClick={() => handleButtonClick("Tourist Visas")}>
-          Tourist Visas
+         {t("Turistik vizalar")}
         </button>
         <button onClick={() => handleButtonClick("Business Visas")}>
-          Business Visas
+         {t("Biznes vizalar")}
         </button>
         <button onClick={() => handleButtonClick("Document Preparation")}>
-          Document Preparation
+          {t("Hujjatlarni tayyorlash")}
         </button>
         <button onClick={() => handleButtonClick("Tour Packages")}>
-          Tour Packages
+          {t("Sayohat paketlari")}
         </button>
         <button onClick={() => handleButtonClick("Insurance")}>
-          Insurance
+          {t("Sug'urta")}
         </button>
       </div>
       <hr className='heth-hr' />

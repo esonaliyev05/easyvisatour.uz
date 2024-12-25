@@ -6,6 +6,7 @@ import { FiPlusCircle } from "react-icons/fi";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import axios from 'axios';
 import { data } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const SendMassage = (event) => {
@@ -40,6 +41,12 @@ const Footer = () => {
         alert("Yuborishda xatolik yuz berdi.");
       });
   };
+  const {t, i18n} = useTranslation();
+  const HandelChange = (event) => {
+    const selectedLanugage = event.target.value;
+
+    i18n.changeLanguage(selectedLanugage);
+  }
   
   // const [phone, setPhone] = useState('');
 
@@ -70,12 +77,12 @@ const Footer = () => {
               <div className="footer-text">
 
                   <div className="text">
-                    <h1>Contact</h1>
+                    <h1>{t("Aloqa")}</h1>
                     <hr />
                   </div>
 
                   <div className="call">
-                         <h3>For contact:</h3>
+                         <h3>{t("Aloqa uchun:")}</h3>
 
                      <a href="">+998 99 712 66 66</a><br />
                      <a href="">+998 97 483 99 99</a>
@@ -83,10 +90,10 @@ const Footer = () => {
                   </div>
                     
                     <div className="tabs">
-                        <h3>Social media</h3>
+                        <h3>{t("Ijtimoiy tarmoqlar")}</h3>
                         <div className="tab">
                             <span> <IoLogoInstagram/> </span>
-                            <a href="">easy.visa.uzb</a>
+                            <a href="">{t("easy.visa.uzb")}</a>
                         </div>
                         <div className="tab">
                             <span> <RiTelegramLine/></span>
@@ -99,7 +106,7 @@ const Footer = () => {
                         </div>
                         <div className="tab">
                             <span><FaMapMarkerAlt/></span>
-                            <a href="">Tashkent, Mustaqillik 59.</a>
+                            <a href="">{t("Toshkent, Mustaqillik 59.")}</a>
                         </div>
                     </div>
 
@@ -122,7 +129,7 @@ const Footer = () => {
                
                <form id='myForm' onSubmit={SendMassage}>
                   
-                  <h1>Submit a request</h1>
+                  <h1> {t("So'rov yuborish")} </h1>
 
                   <input type="text" placeholder='Name' id='name' />
 
@@ -138,7 +145,7 @@ const Footer = () => {
 
                   <textarea placeholder='Comments' id='coment'></textarea>
 
-                  <button type='submit'>Submit a request</button>
+                  <button type='submit'>{t("So'rov yuborish")}</button>
 
                </form>
 
@@ -153,8 +160,8 @@ const Footer = () => {
      <div className="footer-end">
       
       <div className="container">
-        <h3>© EASY VISA CONSULTING - ВСЕ ПРАВА ЗАЩИЩЕНЫ</h3>
-        <p>Разработано сайтом Limsa</p>
+        <h3>{t("© EASY VISA CONSULTING - BARCHA HUQUQLAR HIMOYADA")}</h3>
+        <p> {t("Limsa tomonidan ishlab chiqilgan")} </p>
       </div>
 
      </div>

@@ -1273,3 +1273,597 @@ main{
       
 }
 }
+@media screen and (min-width: 447px) and (max-width: 769px) {
+    main{
+        width: 100%;
+        height: auto;
+        
+    
+        .Main-container{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            flex-direction: column;
+            // padding: 50px 0;
+    
+            .main-text{
+                // padding: 35px 0;
+                text-align: center;
+    
+                h1{
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-weight: 800;
+                    font-size: 50px;
+                    letter-spacing: 5px;
+                    padding: 10px 0;
+                    // border-bottom: 2px solid red;
+                    // border-bottom-width: 5px;
+                    
+                }
+                hr{
+                    width: 50px;
+                    height: 5px;
+                    background: red;
+                    border: none;
+                    margin: 0 auto;
+    
+                }
+            }
+            
+            .Main-about{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 50px;
+                padding: 0 20px;
+                text-align: center;
+    
+                .about-text{
+                    width: 80%;
+                    height: auto;
+                    padding: 25px 0;
+                    // border-bottom: 3px solid red;
+                    // line-height: 50px;
+    
+    
+                    .text-about{
+                        width: 100%;
+                        height: auto;
+                        border-top: 3px solid red;
+    
+                        h1{
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            font-weight: 700;
+                            padding: 35px 0 10px 0;
+                            font-size: 50px;
+    
+                        }
+    
+                        hr{
+                            width: 50px;
+                            height: 5px;
+                            background: red;
+                            border: none;
+                            margin: 0 auto;
+    
+                        }
+    
+                    }
+    
+                    p{
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        color: black;
+                        font-weight: 700;
+                        padding: 40px 0 0 0;
+                        // letter-spacing: 2px;
+                        line-height: 27px;
+    
+    
+                    }
+                }
+                .about-img{
+                    width: 80%;
+                    height: 350px;
+    
+                    img{
+                        width: 370px;
+                        height: 100%;
+                        border-radius: 20px;
+    
+                    }
+    
+                }
+                
+    
+            }
+            .Main-countes{
+                width: 100%;
+                height: auto;
+                // padding: 0 50px;
+                margin: 0 auto;
+                padding: 0;
+    
+        
+                .main-text{
+                    // padding: 35px 15px;
+                    text-align: center;
+    
+                    h1{
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-weight: 800;
+                        font-size: 50px;
+                        letter-spacing: 5px;
+                        padding: 10px 0;
+                        // border-bottom: 2px solid red;
+                        // border-bottom-width: 5px;
+                        
+                    }
+                    hr{
+                        width: 50px;
+                        height: 5px;
+                        background: red;
+                        border: none;
+                        margin: 0 auto;
+        
+                    }
+                }
+        
+                .countes-parent{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 50px;
+                    padding: 0 20px;
+        
+                    .boxses{
+                        width: 100%;
+                        height: 255px;
+                        overflow: hidden;
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+                        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+                        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+                        border-radius: 20px 20px 0 0;
+                        // padding: 0;
+    
+                        .box-img{
+                            width: 100%;
+                            height: 76%;
+                            overflow: hidden;
+                            border-radius: 20px 20px 0 0;
+        
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: transform 0.3s ease;
+        
+                                &:hover{
+                                    transform: scale(1.2); // Hoverda kattalashish
+                                }
+                            }
+                       
+        
+        
+                        }
+        
+                        .box-title{
+                            width: 100%;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0 10px 0 35px;
+                            border-bottom: 4px solid red;
+        
+                            h2{
+                                font-size: 18px;
+                                font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                            }
+        
+                            .img-slice{
+                                width: 80px;
+                                height: 45px;
+                                border-radius: 10px;
+                                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+                                --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+                                --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+                            }
+                        }
+                        
+                        
+        
+        
+                    }
+                
+                }
+        
+            }
+            .Main-excursion{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                padding: 0;
+    
+                .main-text{
+                    width: 100%;
+                    text-align: center;
+    
+                    hr{
+                        margin: 0 auto;
+                    }
+                }
+        
+                .Excursion-video{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding: 0 25px;
+                    
+                    .ext-vido{
+                        width: 100%;
+                        height: 350px;
+                        position: relative;
+                        padding: 15px;
+                        margin: 0 auto;
+        
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 12px;
+        
+        
+                        }
+        
+                        img{
+                            width: 100px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+        
+        
+                    }
+                }
+    
+            }
+    
+            .Main-client{
+                width: 100%;
+                padding: 0;
+    
+                .main-text{
+                    width: 100%;
+                    padding: 20px;
+                    text-align: center;
+    
+                    h1{
+                        font-size: 38px;
+                    }
+    
+                    hr{
+                        margin: 0 auto;
+                    }
+                }
+    
+        
+                .Client-parent-video{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+        
+        
+                    .clinet-video{
+                        width: 330px;
+                        height: 350px;
+                        position: relative;
+                        padding: 15px;
+                        margin: 0 auto;
+    
+        
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 12px;
+        
+                        }
+        
+                        img{
+                            width: 100px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+        
+        
+                    }
+        
+                }
+        
+            }
+    
+    
+        }
+    
+        .Main-Priorities{
+            width: 100%;
+            height: 1200px;
+            // position: none;
+            // margin: 80px 0;
+    
+    
+            .priorities-parent{
+                width: 100%;
+                height: 1000px;
+                padding: 30px 0;
+    
+    
+                .text{
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: 0 25px;
+    
+                    .pr-h1{
+                        h1{
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 28px;
+                        padding: 10px 0;
+    
+                        }
+                        hr{
+                            width: 50px;
+                            height: 5px;
+                            border: none;
+                            background: red;
+                            margin: 0 auto;
+        
+                        }
+                    }
+    
+                    p{
+                        padding: 20px 0 0 0;
+                        font-size: 17px;
+                        color: white;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-weight: 600;
+                        line-height: 1.25;
+                        line-height: 25px;
+    
+                    }
+    
+                 
+                }
+    
+                .boxses{
+                    width: 100%;
+                    height: 300px;
+                    flex-wrap: wrap;
+                    padding: 0 35px;
+                    // margin-bottom: 50px;
+    
+    
+                    .box-tab{
+                        width: 100px;
+                        height: 67px;
+                        text-align: center;
+                        margin: 0 0 25px 0; 
+                        // position: relative;
+                        // top: 500px;
+    
+                        img{
+                            width: 75px;
+                            height: 60px;
+    
+                        }
+    
+                        h3{
+                            padding: 10px 0;
+                            color: white;
+                            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                        }
+    
+                    }
+    
+                }
+            }
+    
+            .Loders-parent{
+                width: 100%;
+                height: 400px;
+                margin: 0 auto;
+                position: relative;
+                top: -200px;
+                display: flex;
+                justify-content: center;
+                
+                .Loders{
+                    width: 85%;
+                    height: 345px;
+                    margin: 0 auto;
+                    padding: 25px 0;
+    
+                    .loders-text{
+                        width: auto;
+                        text-align: center;
+    
+                        h1{
+                            font-size: 32px;
+                            color: white;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            font-weight: 600;
+                            letter-spacing: 2px;
+                            padding: 10px 0;
+                        }
+    
+                        hr{
+                            width: 50px;
+                            height: 5px;
+                            background: white;
+                            margin: 0 auto;
+    
+                        }
+                    }
+    
+                    .loders-box{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        // margin: 50px 0 0 0;
+    
+                        .box{
+                            width: 100%;
+                            text-align: center;
+                            line-height: 33px;
+    
+                            h1{
+                                font-size: 28px;
+                                color: white;
+                                font-weight: 600;
+                                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+    
+                            }
+                            p{
+                                color: white;
+                                font-size: 20px;
+                                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                font-weight: 700;
+                            }
+                        }
+    
+                    }
+    
+                }
+    
+                .Loder-hr{
+                    width: 100%;
+                    height: 5px;
+                    background: red;
+                    display: none;
+                    position: absolute;
+                    border: none;
+                    bottom: 0;
+                    // margin-top: 400px;
+                
+    
+                }
+            }
+        
+    
+    
+        }
+    
+        .services {
+            width: 100%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            padding: 0 50px;
+            text-align: start;
+    
+          
+            .services-text{
+                text-align: center;
+                
+                // padding: 35px 0;
+                h1{
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    
+                }
+                hr{
+                    width: 50px;
+                    height: 5px;
+                    background: red;
+                    border: none;
+                    margin: 0 auto;
+    
+                }
+            }
+            // h1 {
+            //   font-size: 2.5rem;
+            //   margin-bottom: 10px;
+            //   color: #333;
+            // //   text-transform: uppercase;
+            //   position: relative;
+            //   color: black;
+          
+            //   // Tag chiziq
+            //   &::after {
+            //     // content: "";
+            //     // display: block;
+    
+            //     width: 50px;
+            //     height: 4px;
+            //     background-color: red;
+            //     margin: 8px auto 0;
+            //   }
+            // }
+    
+            .heth-hr{
+                width: 5px;
+                height: 40px;
+                background: red;
+                border: none;
+                margin-left: 20px;
+    
+            }
+          
+            .buttons {
+              margin: 20px 0;
+          
+              button {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s, transform 0.2s;
+          
+                &:hover {
+                  background-color: #555;
+                  transform: scale(1.05);
+                  background-color: red;
+    
+                  
+                }
+          
+                &.active {
+                  color: white;
+                  border: 2px solid black;
+                  background-color: red;
+    
+                }
+              }
+            }
+          
+            .content {
+              margin-top: 20px;
+          
+              p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: black;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+              }
+            }
+          }
+          
+    }
+}
