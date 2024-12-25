@@ -24,3 +24,7 @@
 ::-webkit-scrollbar-track {
   background: #f1f1f1; /* Scrollbar trek rangi */
 }
+body{
+  overflow: hidden;
+  overflow-y: scroll;
+}
