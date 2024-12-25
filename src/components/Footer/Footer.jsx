@@ -76,51 +76,50 @@ const Footer = () => {
               
               <div className="footer-text">
 
-                  <div className="text">
+                  <div className="text" data-aos="fade-right">
                     <h1>{t("Aloqa")}</h1>
                     <hr />
                   </div>
 
-                  <div className="call">
-                         <h3>{t("Aloqa uchun:")}</h3>
+                  <div className="call"  data-aos="fade-right">
+                         <h3 data-aos="fade-right">{t("Aloqa uchun:")}</h3>
 
-                     <a href="">+998 99 712 66 66</a><br />
-                     <a href="">+998 97 483 99 99</a>
+                     <a  href="" >+998 99 712 66 66</a><br />
+                     <a   href="" >+998 97 483 99 99</a>
                      
                   </div>
                     
                     <div className="tabs">
-                        <h3>{t("Ijtimoiy tarmoqlar")}</h3>
-                        <div className="tab">
+                        <h3 data-aos="fade-right">{t("Ijtimoiy tarmoqlar")}</h3>
+                        <div className="tab" data-aos="fade-right">
                             <span> <IoLogoInstagram/> </span>
                             <a href="">{t("easy.visa.uzb")}</a>
                         </div>
-                        <div className="tab">
+                        <div className="tab" data-aos="fade-right">
                             <span> <RiTelegramLine/></span>
                             <a href="">t.me/Ataev_Bakhodir90</a><br />
                             {/* <a href="">t.me/sevaraataeva1986</a> */}
                         </div>
-                        <div className="tab">
+                        <div className="tab" data-aos="fade-right">
                             <span><FiPlusCircle/> </span>
                             <a href="">Telegram</a>
                         </div>
-                        <div className="tab">
+                        <div className="tab" data-aos="fade-right">
                             <span><FaMapMarkerAlt/></span>
                             <a href="">{t("Toshkent, Mustaqillik 59.")}</a>
                         </div>
                     </div>
 
                      
-
- 
               </div>
 
-              <div className="footer-maps">
+              <div className="footer-maps"   data-aos="zoom-in">
 
               <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11960.483246752573!2d69.2350!3d41.3195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef3b4c7085e85%3A0xdeb7632ec6801b88!2sQo'qon%20City!5e0!3m2!1sen!2s!4v1699700000000"
                   
                   className='inframe'
+                
                   
                 ></iframe>
               </div>
@@ -129,11 +128,11 @@ const Footer = () => {
                
                <form id='myForm' onSubmit={SendMassage}>
                   
-                  <h1> {t("So'rov yuborish")} </h1>
+                  <h1 data-aos="fade-left"> {t("So'rov yuborish")} </h1>
 
-                  <input type="text" placeholder='Name' id='name' />
+                  <input type="text" placeholder='Name' id='name' data-aos="fade-left" />
 
-                  <input type="text" placeholder='Surname' id='surname' />
+                  <input type="text" placeholder='Surname' id='surname' data-aos="fade-left" />
                   <input
         type="text"  // "number" emas, "text" ishlatiladi
         id="telephone"
@@ -141,11 +140,11 @@ const Footer = () => {
         // onChange={handlePhoneChange}
         maxLength="18"
         placeholder="+998 (__) __ __ __"
-      />
+        data-aos="fade-left" />
 
-                  <textarea placeholder='Comments' id='coment'></textarea>
+                  <textarea placeholder='Comments' id='coment' data-aos="fade-left" ></textarea>
 
-                  <button type='submit'>{t("So'rov yuborish")}</button>
+                  <button type='submit' data-aos="fade-left" >{t("So'rov yuborish")}</button>
 
                </form>
 
