@@ -232,6 +232,7 @@ nav {
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
+      overflow: hidden;
 
       .nav-logo {
         width: auto;
@@ -265,6 +266,10 @@ nav {
         display: flex;
       }
     }
+  }
+  .Open{
+    width: 100%;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 447px) and (max-width: 769px) {
