@@ -96,9 +96,17 @@ nav{
             z-index: 3;
             // position: absolute;
 
+            p{
+                color: black;
+                font-weight: 700;
+                font-size: 18px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+            }
+
             .bars{
                 color: red;
-                font-size: 35px;
+                font-size: 40px;
                 cursor: pointer;
 
             }
