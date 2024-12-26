@@ -7,7 +7,8 @@ import { useEffect } from 'react';
 import Plags from "../../components/MainPlags/Plags"
 import { t } from 'i18next';
 import { useTranslation } from 'react-i18next';
-
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Main = () => {
 
@@ -63,6 +64,30 @@ const Main = () => {
 
     i18n.changeLanguage(selectedLanugage);
   }
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Agar scroll holati 110vh (110% viewport height) dan oshsa, tugma ko'rinadi
+      if (window.scrollY > window.innerHeight * 1.1) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   
   return (
     <>
@@ -333,17 +358,46 @@ const Main = () => {
 
             <div className="loders-box">
               <div className="box"  data-aos="zoom-in">
-                 <h1>7320</h1>
+                 <h1>
+                 <CountUp end={7320} redraw={true} separator=""> 
+        {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+            </VisibilitySensor>
+        )}
+    </CountUp>
+
+                 </h1>
 
                  <p> {t("Berilgan vizalar")} </p>
 
               </div>
               <div className="box"  data-aos="zoom-in">
-                <h1>7257</h1>
+                <h1>
+                    
+                <CountUp end={7257} redraw={true} separator="">
+        {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+            </VisibilitySensor>
+        )}
+    </CountUp>
+
+                </h1>
                 <p>{t("Muvaffaqiyatli sayohatlar")}</p>
               </div>
               <div className="box"  data-aos="zoom-in">
-                <h1>7250</h1>
+                <h1>
+
+                <CountUp end={7250} redraw={true} separator="">
+        {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+            </VisibilitySensor>
+        )}
+    </CountUp>
+
+                </h1>
                 <p> {t("Qoniqgan mijozlar")} </p>
               </div>
             </div>
@@ -364,30 +418,30 @@ const Main = () => {
 
     <div className="services" id='services'>
       
-      <div className="services-text">
-        <h1>{t("Xizmatlar")}</h1>
+      <div className="services-text" data-aos="fade-right">
+        <h1 >{t("Xizmatlar")}</h1>
         <hr />
       </div>
         
       
 
       <div className="buttons">
-        <button onClick={() => handleButtonClick("Visa Consultations")}>
+        <button onClick={() => handleButtonClick("Visa Consultations")}  data-aos="zoom-in"     data-aos-duration="9000">
          {t("Viza maslahatlari")}
         </button>
-        <button onClick={() => handleButtonClick("Tourist Visas")}>
+        <button onClick={() => handleButtonClick("Tourist Visas")}  data-aos="zoom-in">
          {t("Turistik vizalar")}
         </button>
-        <button onClick={() => handleButtonClick("Business Visas")}>
+        <button onClick={() => handleButtonClick("Business Visas")}  data-aos="zoom-in">
          {t("Biznes vizalar")}
         </button>
-        <button onClick={() => handleButtonClick("Document Preparation")}>
+        <button onClick={() => handleButtonClick("Document Preparation")}  data-aos="zoom-in">
           {t("Hujjatlarni tayyorlash")}
         </button>
-        <button onClick={() => handleButtonClick("Tour Packages")}>
+        <button onClick={() => handleButtonClick("Tour Packages")}  data-aos="zoom-in">
           {t("Sayohat paketlari")}
         </button>
-        <button onClick={() => handleButtonClick("Insurance")}>
+        <button onClick={() => handleButtonClick("Insurance")}  data-aos="zoom-in">
           {t("Sug'urta")}
         </button>
       </div>
@@ -396,9 +450,35 @@ const Main = () => {
         <p>{content}</p>
       </div>
     </div>
-
+    <a
+      href="#"
+      className="btn-top"
+      onClick={scrollToTop}
+      style={{
+        position: 'fixed',
+        bottom: '30px',
+        right: '30px',
+        display: isVisible ? 'block' : 'none',
+        // backgroundColor: 'white',
+        border: '3px solid red',
+        color: 'red',
+        textAlign: 'center',
+        borderRadius: '50%',
+        padding: '10px 15px',
+        fontSize: '25px',
+        textDecoration: 'none',
+        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      ↑
+      {/* <GoChevronUp/> */}
+    </a>
       <Plags/>
     </main>
+
+
     </>
   )
 }
