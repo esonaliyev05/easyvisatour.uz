@@ -225,6 +225,7 @@ nav {
   nav {
     width: 100%;
     height: auto;
+    overflow: hidden;
     // margin: 0 auto;
     .container {
       width: 100%;
@@ -232,17 +233,16 @@ nav {
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
-      overflow: hidden;
 
       .nav-logo {
-        width: auto;
+        width: 90px;
         img {
-          width: 90px;
+          width: 100%;
         }
       }
       .nav-img {
-        width: 100%;
-        right: 0;
+        width: 70%;
+        left: 20%;
 
         img {
           width: 100%;
@@ -253,14 +253,7 @@ nav {
       .nav-concet {
         display: none;
 
-        ul {
-          display: none;
-        }
-
-        select {
-          // width: 50px;
-          display: none;
-        }
+    
       }
       .select-bars {
         display: flex;
