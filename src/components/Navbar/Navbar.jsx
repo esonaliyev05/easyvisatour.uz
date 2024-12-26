@@ -3,6 +3,7 @@ import "./Navbar.scss";
 import { HiBars3 } from "react-icons/hi2";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { BsXCircle } from "react-icons/bs";
 
 const Navbar = () => {
    
@@ -58,7 +59,7 @@ const Navbar = () => {
       <div className={open ? "Open activ" : "Open"}>
           
           <div className="edit" onClick={() => setOpen(false)}>
-            X
+            <BsXCircle/>
           </div>
 
           <ul>

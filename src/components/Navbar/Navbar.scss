@@ -223,6 +223,64 @@ nav{
    
 
         }
+        .Open{
+            width: 100%;
+            height: 100%;
+            transition: all .2s linear;
+            position: fixed;
+            // display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            top: -140%;
+            z-index: 4;
+            background-color: white;
+            text-align: center;
+    
+            .edit{
+                width: 40px;
+                height: 40px;
+                // background-color: red;
+                color: red;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 35px;
+            }
+    
+            ul{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                // margin-top: 40%;
+                // line-height: 50px;
+                // text-align: center;
+                gap: 20px;
+    
+                a{
+                    color: black;
+                    font-weight: 700;
+                    font-size: 25px;
+                    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                    // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                }
+            }
+    
+    
+    
+            &.activ{
+                top: 0;
+                // display: flex;
+                // width: ;
+            }
+        }
     }
     
 }
