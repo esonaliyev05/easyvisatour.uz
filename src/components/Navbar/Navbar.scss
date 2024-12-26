@@ -169,24 +169,74 @@ nav {
   }
 }
 @media screen and (max-width: 447px) {
+  // nav {
+  //   width: 100%;
+  //   height: auto;
+  //   overflow: hidden;
+  //   margin: 0 auto;
+
+  //   .container {
+  //     width: 100%;
+  //     height: auto;
+  //     display: flex;
+  //     margin: 0 auto;
+  //     justify-content: space-between;
+  //     overflow: hidden;
+
+  //     .nav-logo {
+  //       width: auto;
+  //       img {
+  //         width: 80px;
+  //       }
+  //     }
+  //     .nav-img {
+  //       width: 100%;
+  //       right: 0;
+
+  //       img {
+  //         width: 100%;
+  //         // left: 30%;
+  //         // margin: 0 auto;
+  //       }
+  //     }
+  //     .nav-concet {
+  //       width: 100px;
+
+  //       ul {
+  //         display: none;
+  //       }
+
+  //       select {
+  //         // width: 50px;
+  //         display: none;
+  //       }
+  //     }
+  //     .select-bars {
+  //       display: flex;
+  //     }
+  //   }
+
+  //   .Open{
+  //     width: 100%;
+  //     overflow: hidden;
+
+  //   }
+  // }
   nav {
     width: 100%;
     height: auto;
-    overflow: hidden;
     // margin: 0 auto;
-
     .container {
-      width: auto;
+      width: 100%;
       height: auto;
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
-      overflow: hidden;
 
       .nav-logo {
         width: auto;
         img {
-          width: 80px;
+          width: 90px;
         }
       }
       .nav-img {
@@ -214,12 +264,6 @@ nav {
       .select-bars {
         display: flex;
       }
-    }
-
-    .Open{
-      width: 100%;
-      overflow: hidden;
-
     }
   }
 }
