@@ -174,10 +174,12 @@ nav {
     height: auto;
     overflow: hidden;
     margin: 0 auto;
+    left: 0;
+    top: 0;
 
     .container {
       width: 100%;
-      height: auto;
+      height: 65px;
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
