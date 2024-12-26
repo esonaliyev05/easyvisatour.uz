@@ -571,6 +571,7 @@ main{
 main{
     width: 100%;
     height: auto;
+    overflow: hidden;
     
 
     .Main-container{
@@ -578,8 +579,10 @@ main{
         height: auto;
         margin: 0 auto;
         flex-direction: column;
+        // padding: 50px 0;
 
         .main-text{
+            // padding: 35px 0;
             text-align: center;
 
             h1{
