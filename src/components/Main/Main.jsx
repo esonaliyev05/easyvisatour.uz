@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import { useEffect } from "react";
 import Plags from "../../components/MainPlags/Plags";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
@@ -56,6 +55,7 @@ const Main = () => {
 
     setContent(text);
   };
+
   const { t, i18n } = useTranslation();
   const HandelChange = (event) => {
     const selectedLanugage = event.target.value;
