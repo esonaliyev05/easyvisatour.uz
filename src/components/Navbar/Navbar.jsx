@@ -63,11 +63,11 @@ const Navbar = () => {
           </div>
 
           <ul>
-            <a href="#about">{t("Haqida")}</a>
-            <a href="#Countries">{t("Mamlakatlar")}</a>
-            <a href="#services">{t("Xizmatlar")}</a>
-            <a href="#excursion">{t("Bizning Ishlarimiz")}</a>
-            <a href="#concat">{t("Bog'lanish")}</a>
+            <a href="#about"  onClick={() => setOpen(false)}>{t("Haqida")}</a>
+            <a href="#Countries"  onClick={() => setOpen(false)}>{t("Mamlakatlar")}</a>
+            <a href="#services"  onClick={() => setOpen(false)}>{t("Xizmatlar")}</a>
+            <a href="#excursion"  onClick={() => setOpen(false)}>{t("Bizning Ishlarimiz")}</a>
+            <a href="#concat"  onClick={() => setOpen(false)}>{t("Bog'lanish")}</a>
             
           </ul>
           

@@ -170,9 +170,9 @@ nav {
 }
 @media screen and (max-width: 447px) {
   nav {
-    width: auto;
+    width: 100%;
     height: auto;
-    overflow: hidden;
+    top: 0;
 
     .container {
       width: 100%;
@@ -180,12 +180,11 @@ nav {
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
-      overflow: hidden;
 
       .nav-logo {
         width: auto;
         img {
-          width: 60px;
+          width: 80px;
         }
       }
       .nav-img {
