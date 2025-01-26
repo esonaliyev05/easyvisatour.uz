@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.scss";
 import { HiBars3 } from "react-icons/hi2";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { BsXCircle } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
    
@@ -17,12 +18,51 @@ const Navbar = () => {
 
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 769) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 350) {
+      if (currentScrollY > lastScrollY) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+    } else {
+      setIsHidden(false);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
-    <nav>
+    <nav className={`navbar ${isHidden ? "hidden" : ""}`}>
       <div className="container">
         <div className="nav-logo">
+          {/* <NavLink to={""}> */}
           <img src="./Nav-imegs/logovector.C2wkqkZw.png" alt="" />
+          {/* </NavLink> */}
         </div>
 
         <div className="nav-img">
